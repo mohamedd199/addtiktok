@@ -1,0 +1,614 @@
+/** BIG BOSS S-O-U-F **/
+/*--------------------------------------------------------------
+# Basics
+--------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+	background: #f1f1f1;
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Cairo', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/*--------------------------------------------------------------
+# Left Side
+--------------------------------------------------------------*/
+.left-side-wrapper {
+	position: fixed;
+	min-height: 100vh;
+	left: 0;
+	top: 0;
+	width: 50%;
+	padding: 100px 100px 70px 100px;
+}
+.left-side-wrapper:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: 86B300;
+	z-index: -2;
+	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
+}
+.left-side-wrapper:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(208deg, #ff8734, #ff8734, #ff8734, #ff8734, #ff8734);
+	z-index: -1;
+	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
+}
+header {
+	position: relative;
+	text-align: center;
+}
+.app-instal-icon {
+	display: table;
+	margin: 0 auto 20px auto;
+	max-width: 320px;
+}
+.h-intro {
+	position: relative;
+}
+.h-intro h1 {
+	font-size: 6.2em;
+	color: #333333;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+	line-height: 1;
+	margin: 0 0 20px 0;
+	font-weight: 700;
+}
+.h-intro h1 span {
+	font-weight: 300;
+	display: block;
+}
+.h-intro p {
+	font-size: 2em;
+	max-width: 500px;
+	margin: 0 auto;
+	color: #333333;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.search-section {
+	position: relative;
+	margin: 50px auto 0 auto;
+}
+.search-content {
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.search-content h3 {
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 7px 0;
+	color: #fff;
+	font-weight: 700;
+}
+.input-icon-wrapper {
+	position: relative;
+	margin: 0 auto;
+}
+.input-icon-wrapper i {
+	position: absolute;
+	color: #fff;
+	left: 30px;
+	top: 43px;
+	font-size: 40px;	
+}
+.input-style {
+	height: 120px;
+	font-size: 1.5em;
+	color: #fff;
+	outline: none !important;
+	width: 100%;
+	padding: 0 5px 0 90px;
+	border: none;
+	box-shadow: none;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+.input-style::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #fff;
+	opacity: 1;
+}
+.input-style::-moz-placeholder { /* Firefox 19+ */
+	color: #fff;
+	opacity: 1;
+}
+.input-style:-ms-input-placeholder { /* IE 10+ */
+	color: #fff;
+	opacity: 1;
+}
+.input-style:-moz-placeholder { /* Firefox 18- */
+	color: #fff;
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Right Side
+--------------------------------------------------------------*/
+.right-side-wrapper {
+	position: relative;
+	min-height: 100vh;
+	padding: 100px 50px 70px 50px;
+}
+#app-particles {
+	position: fixed;
+	width: 60%;
+	height: 100vh;
+	right: 0;
+	top: 0;
+	z-index: -3;
+}
+.tweaked-apps-section {
+	position: relative;
+}
+.tweaked-apps-header {
+	position: relative;
+	z-index: 10;
+	margin: 0 0 30px 0;
+}
+.tweaked-apps-header h2 {
+	font-size: 3.2em;
+	text-align: center;
+	color: #333;
+	font-weight: 700;
+}
+.tweaked-apps-grid-item {
+	padding: 15px 10px;
+	width: 25%;
+}
+.tweaked-apps-grid-item-background {
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	background: #ff8734; /** morba3 Apps color - DB MELI WSELTI L HNA : MOMKIN CHI HAWYA ?**/
+	box-shadow: 0 5px 15px 0 rgba(25,50,165,0.2);
+	-webkit-transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895), -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+}
+.tweaked-apps-grid-item-background:hover {
+	transform: scale(1.02);
+}
+.tweaked-apps-grid-item-content {
+	position: relative;
+	padding: 15px 0 0 0;
+}
+.tweaked-apps-grid-item-image-wrapper {
+	border-radius: 50%;
+	margin: 0 auto;
+	display: table;
+	padding: 5px;
+	background: #0000006b;
+}
+.tweaked-apps-grid-item-image-wrapper img {
+	display: table;
+	margin: 0 auto;
+	border-radius: 50%;
+	max-width: 130px;
+}
+.tweaked-apps-grid-item-information {
+	background: #fff;
+	border-top: 3px solid #000000;
+	padding: 15px;
+	margin: 15px 0 0 0;
+}
+.tweaked-app-title {
+	color: #333;
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1;
+}
+.tweaked-app-button-wrapper {
+	position: relative;
+	margin: 10px 0 0 0;
+}
+.tweaked-app-button-wrapper a {
+	background: #ff8734; /** Start Button Color - DB MELI WSELTI L HNA : MOMKIN CHI HAWYA ?**/
+	display: table;
+	margin: 0 auto;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+	border-radius: 100px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.85em;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	border: 2px solid #000000; /** Entourage Button Start - DB MELI WSELTI L HNA : MOMKIN CHI HAWYA ?**/
+	position: relative;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+.tweaked-app-button-wrapper a:hover {
+	background: #ff8734;
+	border: 2px solid #000; /** Entourage Button Start Hover - DB MELI WSELTI L HNA : MOMKIN CHI HAWYA ?**/
+	color: #fff;
+}
+.search-error-wrapper {
+	display: block;
+	text-align: center;
+	font-size: 4.2em;
+	display: none;
+	color: #333;
+	margin: 120px 0 0 0;
+	position: relative;
+	z-index: 10;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	z-index: 50;
+	min-height: 700px;
+}
+.search-error-wrapper i {
+	font-size: 6em;
+	display: block;
+	margin: 0 0 20px 0;
+	color: 86B300;
+}
+.search-error-wrapper p {
+	font-size: 0.45em;
+	max-width: 650px;
+	text-transform: none;
+	margin: 20px auto 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+	#app-particles {
+		width: 55%;
+		z-index: -5;
+	}
+	.left-side-wrapper {
+		padding: 80px 100px 70px 100px;
+	}
+	.right-side-wrapper {
+		padding-top: 30px;
+	}
+	.app-instal-icon {
+		max-width: 240px;
+	}
+	.h-intro h1 {
+		font-size: 5.6em;
+	}
+	.tweaked-apps-header {
+		margin: 0 0 0 0;
+	}
+	.tweaked-apps-grid-item img {
+		max-width: 100px;
+	}
+	.tweaked-apps-grid-item-information {
+		padding: 15px 7px;
+	}
+	.tweaked-app-title {
+		font-size: 1.1em;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.left-side-wrapper {
+		padding: 70px 80px 70px 80px;
+	}
+	.right-side-wrapper {
+		padding: 70px 0 70px 0;
+	}
+	.app-instal-icon {
+		max-width: 260px;
+	}
+	.h-intro h1 {
+		font-size: 4.2em;
+	}
+	.h-intro p {
+		font-size: 1.8em;
+	}
+	.tweaked-apps-grid-item {
+		width: 33.333%;
+	}
+	.tweaked-apps-grid-item img {
+		max-width: 90px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.left-side-wrapper {
+		padding: 50px 60px 50px 60px;
+	}
+	.right-side-wrapper {
+		padding: 70px 0 70px 0;
+	}
+	.app-instal-icon {
+		max-width: 220px;
+	}
+	.h-intro h1 {
+		font-size: 3.8em;
+	}
+	.h-intro p {
+		font-size: 1.6em;
+	}
+	.right-side-wrapper {
+		padding: 40px 0 70px 0;
+	}
+	.tweaked-apps-header h2 {
+		font-size: 2.4em;
+	}	
+	.tweaked-apps-grid-item img {
+		max-width: 80px;
+	}
+	.tweaked-app-title {
+		font-size: 1.1em;
+	}
+	.input-style {
+		height: 100px;
+	}
+	.input-icon-wrapper i {
+		top: 30px;
+	}
+}
+@media screen and (max-width: 993px) {
+	#app-particles {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.left-side-wrapper {
+		position: relative;
+		min-height: auto;
+		width: 100%;
+		padding: 40px 30px 80px 30px;
+		z-index: 60000;
+	}
+	.left-side-wrapper:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 15px;
+		height: 100%;
+		width: 100%;
+		background: #ff8734;
+		z-index: -2;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 94%);
+	}
+	.left-side-wrapper:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-image: linear-gradient(208deg, #ff8734, #ff8734, #ff8734, #ff8734, #ff8734);
+		z-index: -1;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 94%);
+	}
+	.right-side-wrapper {
+		padding: 40px 80px 70px 80px;
+	}
+	.app-instal-icon {
+		max-width: 200px;
+	}
+	.search-section {
+		position: relative;
+		margin: 25px auto 0 auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.app-instal-icon {
+		max-width: 170px;
+	}
+	.right-side-wrapper {
+		padding: 40px 50px 70px 50px;
+	}
+	.search-error-wrapper {
+		font-size: 2em;
+		margin-top: 30px;
+	}
+	.search-error-wrapper p {
+		font-size: 0.7em;
+	}
+}
+@media screen and (max-width: 550px) {
+	.tweaked-apps-header h2 {
+		font-size: 2em;
+	}	
+	.tweaked-apps-grid-item {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 450px) {
+	.left-side-wrapper {
+		padding: 30px 25px 60px 25px;
+	}
+	.app-instal-icon {
+		max-width: 150px;
+	}
+	.h-intro h1 {
+		font-size: 3em;
+	}
+	.h-intro p {
+		font-size: 1.4em;
+	}
+	.right-side-wrapper {
+		padding: 40px 20px 70px 20px;
+	}
+	.search-content h3 {
+		font-size: 1.2em;
+	}
+	.tweaked-apps-header h2 {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 400px) {
+	.left-side-wrapper {
+		padding: 15px 25px 50px 25px;
+	}
+	.app-instal-icon {
+		max-width: 100px;
+		margin: 0 auto 5px auto;
+	}
+	.h-intro h1 {
+		font-size: 2.6em;
+		margin-bottom: 10px;
+	}
+	.h-intro p {
+		font-size: 1.2em;
+		letter-spacing: 2px;
+	}
+	.input-style {
+		height: 80px;
+	}
+	.input-icon-wrapper i {
+		top: 20px;
+	}
+	.right-side-wrapper {
+		padding: 30px 20px 50px 20px;
+	}
+	.tweaked-apps-header {
+		margin: 0 0 0 0;
+	}
+	.tweaked-apps-header h2 {
+		margin: 0;
+		font-size: 1.6em;
+	}
+	.search-error-wrapper {
+		font-size: 1.6em;
+		margin-top: 10px;
+	}
+	.search-error-wrapper i {
+		margin: 0;
+	}
+	.search-error-wrapper p {
+		margin: 0;
+	}
+}
+@media screen and (max-width: 350px) {
+	.app-instal-icon {
+		max-width: 80px;
+		margin: 0 auto 5px auto;
+	}
+	.h-intro h1 {
+		font-size: 2.4em;
+		margin-bottom: 10px;
+	}
+	.h-intro p {
+		font-size: 1.1em;
+		letter-spacing: 2px;
+	}
+	.input-style {
+		height: 60px;
+		padding-left: 70px;
+		font-size: 1.2em;
+	}
+	.input-icon-wrapper i {
+		right: 20px;
+		top: 16px;
+		font-size: 30px;
+	}
+	.right-side-wrapper {
+		padding: 30px 10px 50px 10px;
+	}
+	.tweaked-apps-grid-item {
+		padding: 10px 5px;
+	}
+	.tweaked-apps-grid-item img {
+		max-width: 70px;
+	}
+}
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
